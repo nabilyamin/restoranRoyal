@@ -13,7 +13,7 @@ public class FinanceController {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
-	private int x;//test-test git push
+	
 	
 	public void keHalamanOwner(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("Owner.fxml"));
