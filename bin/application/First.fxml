@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="usernametextfield" layoutX="280.0" layoutY="152.0" prefHeight="25.0" prefWidth="144.0" promptText="Enter your username" style="-fx-border-color: #FCA43C; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="buttonlogin" layoutX="298.0" layoutY="297.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #FCA43C;" text="Log In">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label fx:id="loginlabel" alignment="CENTER" layoutX="245.0" layoutY="262.0" prefHeight="17.0" prefWidth="215.0" />
+      <Label layoutX="283.0" layoutY="127.0" prefHeight="25.0" prefWidth="138.0" text="Username" />
+      <PasswordField fx:id="passtextfield" layoutX="280.0" layoutY="215.0" prefHeight="25.0" prefWidth="144.0" promptText="Enter your password" style="-fx-border-color: #FCA43C; -fx-border-width: 0px 0px 2px 0px;" />
+      <Pane prefHeight="400.0" prefWidth="238.0" style="-fx-background-color: #FCA43C;">
+         <children>
+            <ImageView fitHeight="246.0" fitWidth="348.0" layoutX="-110.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/photo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="269.0" text="Royal">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="9.0" radius="4.0" width="9.0" />
+               </effect>
+            </Label>
+            <Label layoutX="45.0" layoutY="312.0" text="Chicken">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="9.0" radius="4.0" width="9.0" />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Label layoutX="283.0" layoutY="190.0" prefHeight="25.0" prefWidth="138.0" text="Password" />
+      <ImageView fitHeight="17.0" fitWidth="30.0" layoutX="255.0" layoutY="156.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/78-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="30.0" layoutX="255.0" layoutY="219.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/60-lock.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="297.0" layoutY="63.0" text="Login">
+         <font>
+            <Font name="Arial Bold" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="9.0" radius="4.0" width="9.0" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
