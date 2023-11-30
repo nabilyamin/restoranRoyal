@@ -13,7 +13,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Owner.fxml"));
 			primaryStage.setTitle("Royal Chicken");
 			Image image = new Image("application/chicken-leg.png");
 			primaryStage.getIcons().add(image);

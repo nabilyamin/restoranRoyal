@@ -400,38 +400,22 @@ public class PelayanController {
     		event.printStackTrace();
     	}
     }
-    
+    PindahScene scenechange = new PindahScene();
     @FXML
     public void toMainScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+		scenechange.pindahscene(event, "First.fxml");
     }
     @FXML
     public void toOrderFoodScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("tambahOrderFoodRevisi.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+		scenechange.pindahscene(event, "tambahOrderFoodRevisi.fxml");
     }
     @FXML
     public void toOrderDrinksScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("tambahOrderDrink.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+		scenechange.pindahscene(event, "tambahOrderDrink.fxml");
     }
     @FXML
     public void toRequestScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("tambahRequest.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+		scenechange.pindahscene(event, "tambahRequest.fxml");
     }
     
 

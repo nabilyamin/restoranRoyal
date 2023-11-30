@@ -40,22 +40,13 @@ public class BahanController implements Initializable {
 	    private Stage stage;
 	    private Scene scene;
 	    private Parent root;
-
+PindahScene scenechange = new PindahScene();
 	    public void toUiKoki(ActionEvent event)throws IOException{
-	        Parent root = FXMLLoader.load(getClass().getResource("Koki.fxml"));
-	        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-	        scene = new Scene(root);
-	        stage.setScene(scene);
-	        stage.show();
+			scenechange.pindahscene(event, "Koki.fxml");
 	    }
 	    
 		public void keHalamanUtama(ActionEvent event) throws IOException {
-			Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-
+			scenechange.pindahscene(event, "First.fxml");
 		}
 		
 		

@@ -70,20 +70,13 @@ public class ListOrderController implements Initializable {
 		listOrder = ListOrderController.getDataorder();
 		tabelOrder.setItems(listOrder);
 	}
-	
+
+    PindahScene scenechange = new PindahScene();
     public void toMainScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        scenechange.pindahscene(event, "First.fxml");
     }
     
     public void toOrderFoodScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("tambahOrderFoodRevisi.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        scenechange.pindahscene(event, "tambahOrderFoodRevisi.fxml");
     }
 }

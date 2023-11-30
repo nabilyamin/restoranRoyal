@@ -1,11 +1,11 @@
 module RestoFX {
-	exports application;
+    exports  application;
 
-	requires java.sql;
-	requires javafx.base;
-	requires javafx.controls;
-	requires javafx.fxml;
-	requires javafx.graphics;
-	
-	opens application;
+    requires java.sql;
+    requires javafx.base;
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires javafx.graphics;
+
+    opens   application;
 }

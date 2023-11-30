@@ -50,38 +50,21 @@ public class OwnerController implements Initializable {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
-
+	PindahScene scenechange = new PindahScene();
 	public void switchToRegister(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("RegisterTab.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
+		scenechange.pindahscene(event, "RegisterTab.fxml");
 	}
 	
 	public void keHalamanUtama(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-
+		scenechange.pindahscene(event, "First.fxml");
 	}
 	
 	public void keHalamanFinance(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("FinanceTab.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
+		scenechange.pindahscene(event, "FinanceTab.fxml");
 	}
 	
 	public void keHalamanAddMenu(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("AddMenuTab.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
+		scenechange.pindahscene(event, "AddMenuTab.fxml");
 	}
 	
 	public static ObservableList<User> getDatausers(){
