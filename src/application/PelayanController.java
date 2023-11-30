@@ -168,16 +168,16 @@ public class PelayanController {
 
     	String insertOrder = "INSERT INTO orderlist (pesanan, total_price) VALUES (" +
     	        "(SELECT CONCAT(" +
-    	        "CONCAT(?, ' Geprek, '), " +
-    	        "CONCAT(?, ' Penyet, '), " +
-    	        "CONCAT(?, ' Lalapan, '), " +
-    	        "CONCAT(?, ' Crispy, '), " +
-    	        "CONCAT(?, ' BBQ, '), " +
-    	        "CONCAT(?, ' Bakso, '), " +
-    	        "CONCAT(?, ' Nas Gor, '), " +
-    	        "CONCAT(?, ' Es Teh, '), " +
-    	        "CONCAT(?, ' Es Kelapa, '), " +
-    	        "CONCAT(?, ' Es Jeruk') " +
+    	        "(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?), " +
+    	        "CONCAT(?) " +
     	        ") FROM dual), " +
     	        "(SELECT (" +
     	        "COALESCE(?, 0) * 12000 + " +
@@ -197,7 +197,7 @@ public class PelayanController {
     		
     		
     		if (!jumlahGeprek.getText().isEmpty()) {
-    		    preparedStatement.setInt(1, Integer.parseInt(jumlahGeprek.getText()));
+    			preparedStatement.setInt(1, Integer.parseInt(jumlahGeprek.getText()));
     		} else {
     		    preparedStatement.setInt(1, 0);
     		}
@@ -262,63 +262,63 @@ public class PelayanController {
     			PreparedStatement insertOrderStatement = connectDB.prepareStatement(insertOrder);
     			
                 if (!jumlahGeprek.getText().isEmpty()) {
-                	insertOrderStatement.setInt(1, Integer.parseInt(jumlahGeprek.getText()));
+                	insertOrderStatement.setString(1, jumlahGeprek.getText()+" Geprek, ");
         		} else {
-        			insertOrderStatement.setInt(1, 0);
+        			insertOrderStatement.setString(1, "");
         		}
         		
         		if (!jumlahPenyet.getText().isEmpty()) {
-        			insertOrderStatement.setInt(2, Integer.parseInt(jumlahPenyet.getText()));
+        			insertOrderStatement.setString(2, jumlahPenyet.getText()+" Penyet, ");
         		} else {
-        			insertOrderStatement.setInt(2, 0);
+        			insertOrderStatement.setString(2, "");
         		}
         		
         		if (!jumlahLalapan.getText().isEmpty()) {
-        			insertOrderStatement.setInt(3, Integer.parseInt(jumlahLalapan.getText()));
+        			insertOrderStatement.setString(3, jumlahLalapan.getText()+" Lalapan, ");
         		} else {
-        			insertOrderStatement.setInt(3, 0);
+        			insertOrderStatement.setString(3, "");
         		}
         		
         		if (!jumlahCrispy.getText().isEmpty()) {
-        			insertOrderStatement.setInt(4, Integer.parseInt(jumlahCrispy.getText()));
+        			insertOrderStatement.setString(4, jumlahCrispy.getText()+" Crispy, ");
         		} else {
-        			insertOrderStatement.setInt(4, 0);
+        			insertOrderStatement.setString(4, "");
         		}
         		
         		if (!jumlahBBQ.getText().isEmpty()) {
-        			insertOrderStatement.setInt(5, Integer.parseInt(jumlahBBQ.getText()));
+        			insertOrderStatement.setString(5, jumlahBBQ.getText()+" BBQ, ");
         		} else {
-        			insertOrderStatement.setInt(5, 0);
+        			insertOrderStatement.setString(5, "");
         		}
         		
         		if (!jumlahBakso.getText().isEmpty()) {
-        			insertOrderStatement.setInt(6, Integer.parseInt(jumlahBakso.getText()));
+        			insertOrderStatement.setString(6, jumlahBakso.getText()+" Bakso, ");
         		} else {
-        			insertOrderStatement.setInt(6, 0);
+        			insertOrderStatement.setString(6, "");
         		}
         		
         		if (!jumlahNasGor.getText().isEmpty()) {
-        			insertOrderStatement.setInt(7, Integer.parseInt(jumlahNasGor.getText()));
+        			insertOrderStatement.setString(7, jumlahNasGor.getText()+" NasGor, ");
         		} else {
-        			insertOrderStatement.setInt(7, 0);
+        			insertOrderStatement.setString(7, "");
         		}
         		
         		if (!jumlahEsTeh.getText().isEmpty()) {
-        			insertOrderStatement.setInt(8, Integer.parseInt(jumlahEsTeh.getText()));
+        			insertOrderStatement.setString(8, jumlahEsTeh.getText()+" Es Teh, ");
         		} else {
-        			insertOrderStatement.setInt(8, 0);
+        			insertOrderStatement.setString(8, "");
         		}
         		
         		if (!jumlahEsKelapa.getText().isEmpty()) {
-        			insertOrderStatement.setInt(9, Integer.parseInt(jumlahEsKelapa.getText()));
+        			insertOrderStatement.setString(9, jumlahEsKelapa.getText()+" Es Kelapa, ");
         		} else {
-        			insertOrderStatement.setInt(9, 0);
+        			insertOrderStatement.setString(9, "");
         		}
         		
         		if (!jumlahEsJeruk.getText().isEmpty()) {
-        			insertOrderStatement.setInt(10, Integer.parseInt(jumlahEsJeruk.getText()));
+        			insertOrderStatement.setString(10, jumlahEsJeruk.getText()+" Es Jeruk, ");
         		} else {
-        			insertOrderStatement.setInt(10, 0);
+        			insertOrderStatement.setString(10, "");
         		}
         		
                 if (!jumlahGeprek.getText().isEmpty()) {
@@ -434,38 +434,5 @@ public class PelayanController {
         stage.show();
     }
     
-
-    //@FXML
-   // public void foodConfirmation(ActionEvent event) throws IOException {
-   //     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-   //     alert.setTitle("Confirmation");
-    //    alert.setHeaderText("Are you sure?");
-      //  if (alert.showAndWait().get() == ButtonType.OK) {
-     //     stage = (Stage) foodOrderScene.getScene().getWindow();
-     //       toOrderDrinksScene(event);
-     //   }
-    //}
-    //@FXML
-    //public void drinkConfirmation(ActionEvent event) throws IOException {
-      //  Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-       // alert.setTitle("Confirmation");
-       // alert.setHeaderText("Are you sure?");
-        //if (alert.showAndWait().get() == ButtonType.OK) {
-          //  stage = (Stage) DrinksScene.getScene().getWindow();
-           // toRequestScene(event);
-        //}
-    //}
-   // @FXML
-   // public void requestConfirmation(ActionEvent event) throws IOException {
-    //    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-    //    alert.setTitle("Confirmation");
-    //    alert.setHeaderText("Are you sure?");
-    //    if (alert.showAndWait().get() == ButtonType.OK) {
-    //        stage = (Stage) RequestScene.getScene().getWindow();
-      //      toMainScene(event);
-   //     }
-  //  }
-    
-
 }
 
