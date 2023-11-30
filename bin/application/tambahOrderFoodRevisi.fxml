@@ -47,7 +47,7 @@
               </Button>
          </children>
         </Pane>
-        <Button fx:id="backButton" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#toMainScene" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Back">
+        <Button fx:id="backButton" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#toMainScene" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Logout">
             <font>
                 <Font size="15.0" />
             </font>
@@ -62,42 +62,42 @@
                 <Image url="@../img/hamburger-128.png" />
             </image>
         </ImageView>
-        <Label layoutX="142.0" layoutY="48.0" text="Food List :">
+        <Label layoutX="142.0" layoutY="48.0" text="FOOD LIST">
             <font>
-                <Font name="Arial" size="17.0" />
+                <Font name="Arial Bold" size="17.0" />
             </font>
         </Label>
-        <Label layoutX="159.0" layoutY="80.0" text="Ayam Geprek 12rb">
-            <font>
-                <Font name="Arial" size="15.0" />
-            </font>
-        </Label>
-        <Label layoutX="159.0" layoutY="109.0" text="Ayam Penyet 10rb">
+        <Label layoutX="159.0" layoutY="80.0" text="Ayam Geprek">
             <font>
                 <Font name="Arial" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="159.0" layoutY="169.0" text="Ayam Lalapan 10rb">
+        <Label layoutX="159.0" layoutY="109.0" text="Ayam Penyet">
             <font>
                 <Font name="Arial" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="159.0" layoutY="139.0" text="Ayam Crispy 12rb">
+        <Label layoutX="159.0" layoutY="169.0" text="Ayam Lalapan">
             <font>
                 <Font name="Arial" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="159.0" layoutY="199.0" text="Ayam BBQ 12rb">
+        <Label layoutX="159.0" layoutY="139.0" text="Ayam Crispy">
             <font>
                 <Font name="Arial" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="159.0" layoutY="228.0" text="Bakso 10rb">
+        <Label layoutX="159.0" layoutY="199.0" text="Ayam BBQ">
             <font>
                 <Font name="Arial" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="159.0" layoutY="260.0" text="Nasi Goreng 10rb">
+        <Label layoutX="159.0" layoutY="228.0" text="Bakso">
+            <font>
+                <Font name="Arial" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="159.0" layoutY="260.0" text="Nasi Goreng">
             <font>
                 <Font name="Arial" size="15.0" />
             </font>
@@ -147,5 +147,60 @@
       </Label>
       <CheckBox fx:id="checkEsJeruk" layoutX="134.0" layoutY="364.0" mnemonicParsing="false" onAction="#actionEsjeruk" />
       <TextField fx:id="jumlahEsJeruk" layoutX="310.0" layoutY="358.0" prefHeight="5.0" prefWidth="50.0" />
+      <Label layoutX="380.0" layoutY="79.0" text="12K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="109.0" text="10K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="138.0" text="12K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="169.0" text="10K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="198.0" text="12K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="228.0" text="10K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="259.0" text="10K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="295.0" text="5K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="328.0" text="5K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="362.0" text="5K">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="48.0" text="AMOUNT">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
