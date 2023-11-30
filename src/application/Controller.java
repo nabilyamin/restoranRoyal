@@ -62,7 +62,7 @@ public class Controller {
 	
 	private void switchToNewScenePelayan() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Pelayan.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("tambahOrderFoodRevisi.fxml"));
             Parent root = loader.load();
             Scene newScene = new Scene(root);
 

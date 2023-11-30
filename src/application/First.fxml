@@ -14,7 +14,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <TextField fx:id="usernametextfield" layoutX="280.0" layoutY="152.0" prefHeight="25.0" prefWidth="144.0" promptText="Enter your username" style="-fx-border-color: #FCA43C; -fx-border-width: 0px 0px 2px 0px;" />
-      <Button fx:id="buttonlogin" layoutX="298.0" layoutY="297.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #FCA43C;" text="Log In">
+      <Button fx:id="buttonlogin" defaultButton="true" layoutX="298.0" layoutY="297.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: #FCA43C;" text="Log In">
          <font>
             <Font size="16.0" />
          </font>
