@@ -39,37 +39,21 @@ public class FinanceController implements Initializable{
     
     ObservableList<Pendapatan> listPendapatan;
 
-	
+	PindahScene scenechange = new PindahScene();
 	public void keHalamanOwner(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("Owner.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
+		scenechange.pindahscene(event, "Owner.fxml");
 		}
 	
 	public void switchToRegister(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("RegisterTab.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
+		scenechange.pindahscene(event, "RegisterTab.fxml");
 	}
 	
 	public void keHalamanUtama(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-		}
+		scenechange.pindahscene(event, "First.fxml");
+	}
 
 	public void keHalamanAddMenu(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("AddMenuTab.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
+		scenechange.pindahscene(event, "AddMenuTab.fxml");
 	}
 
 	 

@@ -69,30 +69,17 @@ public class KokiController implements Initializable {
 		tableOrderKoki.setItems(listOrderKoki);
 	}
 	
-	
+	PindahScene scenechange = new PindahScene();
     public void toListBahanScene(ActionEvent event)throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("ListBahanUI.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        scenechange.pindahscene(event, "ListBahanUI.fxml");
     }
     
     public void toUiKoki(ActionEvent event)throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("Koki.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        scenechange.pindahscene(event, "Koki.fxml");
     }
     
 	public void keHalamanUtama(ActionEvent event) throws IOException {
-		Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
-		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-		scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-
+        scenechange.pindahscene(event, "First.fxml");
 	}
     
 

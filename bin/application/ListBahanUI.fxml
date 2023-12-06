@@ -35,17 +35,17 @@
             <Image url="@chicken-leg.png" />
          </image>
       </ImageView>
-      <Button fx:id="buttonListBahan" alignment="CENTER_RIGHT" layoutY="119.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 0px 0px 2px 0px;" text="List Bahan" textFill="WHITE">
+      <Button fx:id="buttonListBahan" alignment="CENTER_RIGHT" layoutY="125.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 0px 0px 2px 0px;" text="Bahan    " textFill="WHITE">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="buttonListOrder" alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" onAction="#toUiKoki" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="List Order" textFill="WHITE">
+      <Button fx:id="buttonListOrder" alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" onAction="#toUiKoki" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Order     " textFill="WHITE">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="buttonBack" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Back">
+      <Button fx:id="buttonBack" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Logout">
          <font>
             <Font size="15.0" />
          </font>
@@ -57,12 +57,12 @@
             <TableColumn fx:id="jumlahBahan" prefWidth="192.0" text="Jumlah Bahan" />
         </columns>
       </TableView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/list-2-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/bunch-ingredients-512.png" />
          </image>
