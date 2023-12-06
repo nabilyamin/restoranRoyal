@@ -25,17 +25,13 @@ import javafx.scene.control.Label;
 public class RegisterController implements Initializable{
 	
 	@FXML
-	private TextField firstnametext;
-	@FXML
-	private TextField lastnametext;
-	@FXML
-	private TextField usernameregis;
-	@FXML
 	private PasswordField passregister;
 	@FXML
-	private TextField phoneNum;
-	@FXML
-	private TextField emailUser;
+	private TextField phoneNum, 
+					  emailUser, 
+					  firstnametext, 
+					  lastnametext, 
+					  usernameregis;
 	@FXML
 	private Button registerButton;
 	@FXML

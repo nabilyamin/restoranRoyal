@@ -2,11 +2,12 @@ package application;
 
 public class User {
 	private int tableId;
-	private String tableFirstName;
-	private String tableLastName;
-	private String tableRoles;
-	private String tablePhone;
-	private String tableEmail;
+	private String tableFirstName, 
+				   tableLastName, 
+				   tableRoles, 
+				   tablePhone, 
+				   tableEmail;
+
 	
 	public User(int tableId,
 				String tableFirstName,

@@ -1,9 +1,8 @@
 package application;
 
 public class Order {
-	private int tableIdOrder;
+	private int tableIdOrder, tableTotalHarga;
 	private String tablePesanan;
-	private int tableTotalHarga;
 	
 	public Order(int tableIdOrder, String tablePesanan, int tableTotalHarga) {
 	this.tableIdOrder = tableIdOrder;

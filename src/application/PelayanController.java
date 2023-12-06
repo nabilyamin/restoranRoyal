@@ -59,12 +59,6 @@ public class PelayanController {
     				  jumlahEsKelapa, 
     				  jumlahEsJeruk;
     
-
-    public void keHalamanUtama(ActionEvent event) {
-        //ketika tombol logout ditekan maka akan kembali ke halaman utama/halaman login
-
-    }
-    
     
     int ayamgeprek, ayampenyet, ayamcrispy, ayamlalapan, ayambbq, sobakso, nasgorr, esteh, eskelapa, esjeruk;
     public void actionGeprek(ActionEvent event) {
