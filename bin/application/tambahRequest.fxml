@@ -30,7 +30,7 @@
             <DropShadow />
          </effect>
          <children>
-            <Button alignment="CENTER_RIGHT" layoutY="124.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="List Order" textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="124.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="Order     " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -42,7 +42,7 @@
             </ImageView>
          </children>
       </Pane>
-      <Button fx:id="backButton" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#toMainScene" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Logout">
+      <Button fx:id="backButton" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#toMainScene" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Logout">
          <font>
             <Font size="15.0" />
          </font>
@@ -52,7 +52,7 @@
             <Image url="@chicken-leg.png" />
          </image>
       </ImageView>
-      <Button fx:id="FoodButton" alignment="CENTER" layoutY="80.0" mnemonicParsing="false" onAction="#toOrderFoodScene" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="           Menu" textFill="WHITE">
+      <Button fx:id="FoodButton" alignment="CENTER" layoutY="80.0" mnemonicParsing="false" onAction="#toOrderFoodScene" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="       Menu" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
@@ -65,8 +65,8 @@
       <TableView fx:id="tabelOrder" layoutX="123.0" layoutY="28.0" prefHeight="372.0" prefWidth="651.0">
         <columns>
           <TableColumn fx:id="idOrder" prefWidth="30.0" text="ID" />
-          <TableColumn fx:id="pesanan" prefWidth="555.0" text="Pesanan" />
-            <TableColumn fx:id="totalHarga" prefWidth="65.0" text="Total" />
+          <TableColumn fx:id="pesanan" prefWidth="550.0" text="Pesanan" />
+            <TableColumn fx:id="totalHarga" prefWidth="70.0" text="Total (Rp.)" />
         </columns>
       </TableView>
    </children>

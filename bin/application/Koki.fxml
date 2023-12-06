@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KokiController">
+<AnchorPane prefHeight="400.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KokiController">
    <children>
       <Pane layoutX="119.0" layoutY="-1.0" prefHeight="30.0" prefWidth="655.0" style="-fx-background-color: #FCA43C;">
          <effect>
@@ -35,12 +35,12 @@
             <Image url="@chicken-leg.png" />
          </image>
       </ImageView>
-      <Button fx:id="buttonListBahan" alignment="CENTER_RIGHT" layoutY="119.0" mnemonicParsing="false" onAction="#toListBahanScene" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Bahan    " textFill="WHITE">
+      <Button fx:id="buttonListBahan" alignment="CENTER_RIGHT" layoutY="125.0" mnemonicParsing="false" onAction="#toListBahanScene" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Bahan    " textFill="WHITE">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="buttonListOrder" alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 0px 0px;" text="Order     " textFill="WHITE">
+      <Button fx:id="buttonListOrder" alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="Order     " textFill="WHITE">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
@@ -50,19 +50,19 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <TableView fx:id="tableOrderKoki" layoutX="122.0" layoutY="26.0" prefHeight="372.0" prefWidth="696.0">
+      <TableView fx:id="tableOrderKoki" layoutX="122.0" layoutY="26.0" prefHeight="372.0" prefWidth="655.0">
         <columns>
           <TableColumn fx:id="idOrderKoki" minWidth="0.0" prefWidth="35.0" text="ID" />
           <TableColumn fx:id="pesananKoki" prefWidth="555.0" text="Pesanan" />
-            <TableColumn fx:id="totalKoki" prefWidth="64.0" text="Total" />
+            <TableColumn fx:id="totalKoki" prefWidth="64.0" text="Total (Rp.)" />
         </columns>
       </TableView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/list-2-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="12.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/bunch-ingredients-512.png" />
          </image>

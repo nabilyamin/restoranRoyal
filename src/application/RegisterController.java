@@ -16,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.control.PasswordField;
@@ -40,7 +41,7 @@ public class RegisterController implements Initializable{
 	@FXML
 	private Label regislabel;
 	@FXML
-	private ChoiceBox<String> roleBox;
+	private ComboBox<String> roleBox;
 	
 	
 	public void registerButtonAction(ActionEvent event) {

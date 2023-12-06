@@ -62,7 +62,7 @@
             <Image url="@../img/list-2-256.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="12.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/bunch-ingredients-512.png" />
          </image>

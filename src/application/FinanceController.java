@@ -35,6 +35,9 @@ public class FinanceController implements Initializable{
     private TableColumn<Pendapatan, Integer> totalPendapatan;
     
     @FXML
+    private TableColumn<Pendapatan, String> kolomIdPendapatan;
+    
+    @FXML
     private Label labelTotal;
     
     ObservableList<Pendapatan> listPendapatan;
@@ -66,7 +69,7 @@ public class FinanceController implements Initializable{
 				ResultSet rs = ps.executeQuery();
 				
 				while (rs.next()) {
-					list.add(new Pendapatan(Integer.parseInt(rs.getString("total_price"))));
+					list.add(new Pendapatan(Integer.parseInt(rs.getString("total_price")), rs.getString("order_id")));
 				}
 				
 			} catch (Exception e) {}
@@ -78,7 +81,8 @@ public class FinanceController implements Initializable{
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			// TODO Auto-generated method stub
 			totalPendapatan.setCellValueFactory(new PropertyValueFactory<Pendapatan, Integer>("pendapatan"));
-
+			kolomIdPendapatan.setCellValueFactory(new PropertyValueFactory<Pendapatan, String>("idPendapatan"));
+			
 			listPendapatan = FinanceController.getDatapendapatan();
 			tablePendapatan.setItems(listPendapatan);
 			

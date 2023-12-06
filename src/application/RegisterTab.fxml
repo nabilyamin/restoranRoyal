@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -23,7 +23,7 @@
       <Label layoutX="353.0" layoutY="136.0" text="Password" />
       <PasswordField fx:id="passregister" layoutX="353.0" layoutY="157.0" promptText="Enter your password" style="-fx-border-color: #FCA43C; -fx-border-width: 0px 0px 2px 0px;" />
       <Label layoutX="169.0" layoutY="252.0" text="Role" />
-      <Button fx:id="registerButton" layoutX="164.0" layoutY="330.0" mnemonicParsing="false" onAction="#registerButtonAction" style="-fx-background-color: #FCA43C;" text="Register">
+      <Button fx:id="registerButton" layoutX="164.0" layoutY="330.0" mnemonicParsing="false" onAction="#registerButtonAction" styleClass="buttonbiasa" stylesheets="@button.css" text="Register">
          <font>
             <Font size="17.0" />
          </font>
@@ -32,10 +32,6 @@
          </effect>
       </Button>
       <Label fx:id="regislabel" layoutX="259.0" layoutY="341.0" prefHeight="17.0" prefWidth="251.0" />
-      <ChoiceBox fx:id="roleBox" layoutX="165.0" layoutY="275.0" prefWidth="150.0" style="-fx-background-color: #FCA43C;">
-         <effect>
-            <DropShadow blurType="ONE_PASS_BOX" />
-         </effect></ChoiceBox>
       <Pane layoutX="113.0" prefHeight="25.0" prefWidth="434.0" style="-fx-background-color: #FCA43C;">
          <effect>
             <DropShadow />
@@ -53,12 +49,12 @@
             <DropShadow />
          </effect>
          <children>
-            <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Logout">
+            <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Logout">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" onAction="#keHalamanOwner" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 0px 0px;" text="Employee " textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" onAction="#keHalamanOwner" prefHeight="39.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 0px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Employee " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -68,7 +64,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button alignment="CENTER_RIGHT" layoutY="158.0" mnemonicParsing="false" onAction="#keHalamanFinance" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="Finance    " textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="158.0" mnemonicParsing="false" onAction="#keHalamanFinance" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Finance    " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -99,5 +95,10 @@
       <TextField fx:id="phoneNum" layoutX="165.0" layoutY="215.0" promptText="Enter your number" style="-fx-border-color: #FCA43C; -fx-border-width: 0px 0px 2px 0px;" />
       <Label layoutX="355.0" layoutY="192.0" text="Email" />
       <TextField fx:id="emailUser" layoutX="354.0" layoutY="213.0" promptText="Enter your Email" style="-fx-border-color: #FCA43C; -fx-border-width: 0px 0px 2px 0px;" />
+      <ComboBox fx:id="roleBox" layoutX="165.0" layoutY="278.0" prefWidth="150.0" promptText="What is he?" style="-fx-background-color: #FCa43C;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
    </children>
 </AnchorPane>

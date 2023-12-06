@@ -40,7 +40,7 @@
             <DropShadow />
          </effect>
          <children>
-            <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Logout">
+            <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Logout">
                <font>
                   <Font size="15.0" />
                </font>
@@ -49,12 +49,12 @@
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button alignment="CENTER_RIGHT" layoutY="119.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43C; -fx-border-width: 2px 0px 0px 0px;" text="Register   " textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="119.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="39.0" prefWidth="122.0" style="-fx-border-color: #FCA43C; -fx-border-width: 2px 0px 0px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Register   " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button alignment="CENTER_RIGHT" layoutY="158.0" mnemonicParsing="false" onAction="#keHalamanFinance" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="Finance    " textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="158.0" mnemonicParsing="false" onAction="#keHalamanFinance" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Finance    " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

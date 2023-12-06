@@ -30,7 +30,7 @@
                 <DropShadow />
             </effect>
          <children>
-              <Button fx:id="buttonRequest" alignment="CENTER_RIGHT" layoutY="124.0" mnemonicParsing="false" onAction="#toRequestScene" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="List Order" textFill="WHITE">
+              <Button fx:id="buttonRequest" alignment="CENTER_RIGHT" layoutY="124.0" mnemonicParsing="false" onAction="#toRequestScene" prefHeight="46.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Order     " textFill="WHITE">
                   <font>
                       <Font size="14.0" />
                   </font>
@@ -40,7 +40,7 @@
                       <Image url="@../img/list-2-256.png" />
                   </image>
               </ImageView>
-              <Button fx:id="buttonFood" alignment="CENTER" layoutY="80.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="           Menu" textFill="WHITE">
+              <Button fx:id="buttonFood" alignment="CENTER" layoutY="80.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #FA8072; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 2px 0px;" text="       Menu" textFill="WHITE">
                   <font>
                       <Font size="14.0" />
                   </font>
@@ -105,7 +105,7 @@
       <CheckBox fx:id="checkAyamGeprek" layoutX="134.0" layoutY="81.0" mnemonicParsing="false" onAction="#actionGeprek" />
       <CheckBox fx:id="checkAyamPenyet" layoutX="134.0" layoutY="110.0" mnemonicParsing="false" onAction="#actionPenyet" />
       <CheckBox fx:id="checkAyamLalapan" layoutX="134.0" layoutY="170.0" mnemonicParsing="false" onAction="#actionLalapan" />
-      <CheckBox fx:id="checkAyamCrispy" layoutX="134.0" layoutY="146.0" mnemonicParsing="false" onAction="#actionCrispy" />
+      <CheckBox fx:id="checkAyamCrispy" layoutX="134.0" layoutY="139.0" mnemonicParsing="false" onAction="#actionCrispy" />
       <CheckBox fx:id="checkAyamBBQ" layoutX="134.0" layoutY="200.0" mnemonicParsing="false" onAction="#actionBbq" />
       <CheckBox fx:id="checkBakso" layoutX="134.0" layoutY="229.0" mnemonicParsing="false" onAction="#actionBakso" />
       <CheckBox fx:id="checkNasGor" layoutX="134.0" layoutY="261.0" mnemonicParsing="false" onAction="#actionNasgor" />
@@ -121,7 +121,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Label fx:id="labelOrder" alignment="CENTER" layoutX="386.0" layoutY="329.0" prefHeight="17.0" prefWidth="146.0">
+      <Label fx:id="labelOrder" alignment="CENTER" layoutX="433.0" layoutY="331.0" prefHeight="17.0" prefWidth="102.0">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font>

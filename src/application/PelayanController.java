@@ -382,18 +382,10 @@ public class PelayanController {
         		}
                 
                 int insertRowsAffected = insertOrderStatement.executeUpdate();
-                
-                if(insertRowsAffected > 0) {
-                	System.out.println("berhasil orderlist");
-                }else {
-                	System.out.println("Gagal orderlist");
-                }
-    			
-    			//what i insert in this
 
-    			labelOrder.setText("Berhasil order menu");
+    			labelOrder.setText("Berhasil order");
     		} else {
-    			labelOrder.setText("Silahkan isi menu");
+    			labelOrder.setText("Silakan isi");
     		}
     		
     	} catch(Exception event) {
@@ -401,7 +393,6 @@ public class PelayanController {
     	}
     }
     
-    @FXML
     public void toMainScene(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("First.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -409,7 +400,6 @@ public class PelayanController {
         stage.setScene(scene);
         stage.show();
     }
-    @FXML
     public void toOrderFoodScene(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("tambahOrderFoodRevisi.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -417,15 +407,6 @@ public class PelayanController {
         stage.setScene(scene);
         stage.show();
     }
-    @FXML
-    public void toOrderDrinksScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("tambahOrderDrink.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-    @FXML
     public void toRequestScene(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("tambahRequest.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

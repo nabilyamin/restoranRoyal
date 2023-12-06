@@ -25,9 +25,10 @@
             </Label>
          </children>
       </Pane>
-      <TableView fx:id="tablePendapatan" layoutX="156.0" layoutY="39.0" prefHeight="340.0" prefWidth="89.0">
+      <TableView fx:id="tablePendapatan" layoutX="137.0" layoutY="40.0" prefHeight="340.0" prefWidth="143.0">
         <columns>
-          <TableColumn fx:id="totalPendapatan" prefWidth="88.0" text="Pendapatan" />
+          <TableColumn fx:id="kolomIdPendapatan" prefWidth="37.0" text="Id" />
+            <TableColumn fx:id="totalPendapatan" prefWidth="106.0" text="Pendapatan(Rp.)" />
         </columns>
       </TableView>
       <Pane prefHeight="400.0" prefWidth="122.0" style="-fx-background-color: #BC2014;">
@@ -35,16 +36,16 @@
             <DropShadow />
          </effect>
          <children>
-            <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Logout">
+            <Button layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#keHalamanUtama" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Logout">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" onAction="#keHalamanOwner" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43c; -fx-border-width: 2px 0px 0px 0px;" text="Employee " textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="80.0" mnemonicParsing="false" onAction="#keHalamanOwner" prefHeight="39.0" prefWidth="122.0" style="-fx-border-color: #FCA43c; -fx-border-width: 2px 0px 0px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Employee " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button alignment="CENTER_RIGHT" layoutY="119.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #BC2014; -fx-border-color: #FCA43C; -fx-border-width: 2px 0px 0px 0px;" text="Register   " textFill="WHITE">
+            <Button alignment="CENTER_RIGHT" layoutY="119.0" mnemonicParsing="false" onAction="#switchToRegister" prefHeight="39.0" prefWidth="122.0" style="-fx-border-color: #FCA43C; -fx-border-width: 2px 0px 0px 0px;" styleClass="buttonred" stylesheets="@button.css" text="Register   " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -81,9 +82,14 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="labelTotal" layoutX="316.0" layoutY="190.0" prefHeight="20.0" prefWidth="179.0">
+      <Label fx:id="labelTotal" layoutX="339.0" layoutY="190.0" prefHeight="20.0" prefWidth="156.0">
          <font>
             <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="192.0" text="Rp.">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
    </children>
