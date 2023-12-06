@@ -47,10 +47,13 @@
               </Button>
          </children>
         </Pane>
-        <Button fx:id="backButton" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#toMainScene" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Logout">
+        <Button fx:id="backButton" layoutX="13.0" layoutY="355.0" mnemonicParsing="false" onAction="#toMainScene" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Logout">
             <font>
                 <Font size="15.0" />
             </font>
+         <effect>
+            <DropShadow />
+         </effect>
         </Button>
         <ImageView fitHeight="104.0" fitWidth="76.0" layoutX="19.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -116,10 +119,13 @@
       <TextField fx:id="jumlahBBQ" layoutX="310.0" layoutY="196.0" prefHeight="5.0" prefWidth="50.0" />
       <TextField fx:id="jumlahBakso" layoutX="310.0" layoutY="225.0" prefHeight="16.0" prefWidth="50.0" />
       <TextField fx:id="jumlahNasGor" layoutX="310.0" layoutY="257.0" prefHeight="16.0" prefWidth="50.0" />
-      <Button fx:id="buttonConfirmFood" layoutX="436.0" layoutY="355.0" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #FCA43C;" text="Confirm">
+      <Button fx:id="buttonConfirmFood" layoutX="436.0" layoutY="355.0" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Confirm">
          <font>
             <Font size="15.0" />
          </font>
+         <effect>
+            <DropShadow />
+         </effect>
       </Button>
       <Label fx:id="labelOrder" alignment="CENTER" layoutX="433.0" layoutY="331.0" prefHeight="17.0" prefWidth="102.0">
          <font>
@@ -202,5 +208,13 @@
             <Font name="Arial Bold" size="17.0" />
          </font>
       </Label>
+      <Button layoutX="436.0" layoutY="43.0" mnemonicParsing="false" onAction="#toBillScene" prefHeight="31.0" prefWidth="96.0" styleClass="buttonbiasa" stylesheets="@button.css" text="Bill">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
     </children>
 </AnchorPane>

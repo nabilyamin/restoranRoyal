@@ -394,8 +394,8 @@ public class PelayanController {
         stage.setScene(scene);
         stage.show();
     }
-    public void toOrderFoodScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("tambahOrderFoodRevisi.fxml"));
+    public void toBillScene(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("PelayanBill.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
