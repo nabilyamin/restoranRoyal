@@ -1,6 +1,7 @@
 # restoranRoyal
 
 Restoran Royal Chicken
+
 Aplikasi yang dibuat untuk membantu staff restoran agar pekerjaan
 mereka menjadi lebih ringan
 
